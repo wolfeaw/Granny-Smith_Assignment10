@@ -4,8 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bb3a6307-350b-45e8-9100-a12abb5c4e09</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>main_package\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,9 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="api_package\" />
     <Folder Include="main_package\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="api_package\api_handler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="api_package\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="main_package\main.py">
       <SubType>Code</SubType>
     </Compile>
